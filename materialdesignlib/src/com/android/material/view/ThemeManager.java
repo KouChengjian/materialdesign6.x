@@ -24,7 +24,7 @@ public class ThemeManager {
     private volatile static ThemeManager mInstance;
 
     private Context mContext;
-    private SparseArray<int[]> mStyles =  new SparseArray<>();
+    private SparseArray<int[]> mStyles =  new SparseArray<int[]>();
     private int mCurrentTheme;
     private int mThemeCount;
     private EventDispatcher mDispatcher;
@@ -200,7 +200,7 @@ public class ThemeManager {
 
     public static class SimpleDispatcher implements EventDispatcher{
 
-        ArrayList<WeakReference<OnThemeChangedListener>> mListeners = new ArrayList<>();
+        ArrayList<WeakReference<OnThemeChangedListener>> mListeners = new ArrayList<WeakReference<OnThemeChangedListener>>();
 
         @Override
         public void registerListener(OnThemeChangedListener listener) {
@@ -214,7 +214,7 @@ public class ThemeManager {
             }
 
             if(!exist)
-                mListeners.add(new WeakReference<>(listener));
+                mListeners.add(new WeakReference<OnThemeChangedListener>(listener));
         }
 
         @Override
