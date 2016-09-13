@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.android.mdui.layout.LayoutActivity1;
+import com.android.mdui.layout.LayoutActivity2;
+import com.android.mdui.layout.LayoutActivity4;
 
 public class LayoutActivity extends Activity implements OnItemClickListener{
 
@@ -31,6 +33,8 @@ private ListView listView;
 	private List<String> getData(){
         List<String> data = new ArrayList<String>();
         data.add("layout1");
+        data.add("layout2");
+        data.add("layout4");
         return data;
     }
 	
@@ -41,8 +45,10 @@ private ListView listView;
 			startAnimActivity(LayoutActivity1.class);
 			break;
 		case 1:
+			startAnimActivity(LayoutActivity2.class);
 			break;
 		case 2:
+			startAnimActivity(LayoutActivity4.class);
 			break;
 		case 3:
 			break;

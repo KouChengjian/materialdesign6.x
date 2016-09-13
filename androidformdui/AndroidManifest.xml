@@ -29,6 +29,12 @@
         <activity 
             android:name=".layout.LayoutActivity1"
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity 
+            android:name=".layout.LayoutActivity2"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity 
+            android:name=".layout.LayoutActivity4"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
