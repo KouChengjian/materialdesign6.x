@@ -38,5 +38,6 @@ captures/
 
 # Keystore files
 *.jks
+androidformdui/.apt_generated
 
 androidformdui/.apt_generated
